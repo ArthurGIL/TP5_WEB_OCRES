@@ -24,7 +24,6 @@ router.get('/', function(req, res, next) {
 });
 
 /* POST users listing. */
-/*
 router.post('/:id', (req, res) => {
   const {id} = req.params;
   const {user} = req.body;
@@ -32,10 +31,11 @@ router.post('/:id', (req, res) => {
 
   userToUpdate.user = user;
 
+  res.send('POST');
   res.json({
     message: 'Just updated ${id} with ${user}'
   });
 });
-*/
+
 
 module.exports = router;
